@@ -43,8 +43,8 @@ delay1		SUBS	R3,#1
 		ENDP
 
 ; The following codes are not used in this application, but their symbols are required for error-free linking by default linker setup	
-			EXPORT  __Vectors		; default symbol required by the linker, not used in this program	  
-			EXPORT  Reset_Handler		; default symbol required by linker, not needed in this program
+		EXPORT  __Vectors		; default symbol required by the linker, not used in this program	  
+		EXPORT  Reset_Handler		; default symbol required by linker, not needed in this program
 				
 	AREA	texts, CODE, READONLY, ALIGN=4
 Reset_Handler	PROC					; Typical code for Reset_vector handler
