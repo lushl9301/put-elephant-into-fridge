@@ -2,7 +2,7 @@
 ; This program blink the LEDs on the DE0 board
 
 ; Stack related directives
-	AREA	STACK, NOINIT, READWRITE, ALIGN=4	; Name this block of code as STACK, reside in the RAM area
+AREA	STACK, NOINIT, READWRITE, ALIGN=4	; Name this block of code as STACK, reside in the RAM area
 Stack_Size	EQU	0x200				; Stack Size = 0x200 bytes
 Stack_Mem	SPACE	Stack_Size			; Reserve the space in RAM
 TOP_STACK						; Set top of stack location
